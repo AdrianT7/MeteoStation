@@ -150,33 +150,29 @@ title = tk.Label(root, font='lato 32 bold', bg='#005c5f', fg='white', text='Mete
 title.place(relx=0.5, rely=0.02, relwidth=0.75, relheight=0.1, anchor='n')
 
 
-# Frame that contains data from arduino
+# Pole zawierające dane z arduino
 dataFrame = tk.Frame(root, bg='#005c5f', bd=5)
 dataFrame.place(relx=0.5, rely=0.125, relwidth=0.75, relheight=0.3, anchor='n')
 
 
-# Frame for temperature
+# Pole zawierające aktualną temperaturę
 tempFrame = tk.Frame(dataFrame, bg='#00979d', bd=5)
 tempFrame.place(relx=0.5, rely=0.1, relwidth=0.8, relheight=0.37, anchor='n')
 
-# temperature info
 tmp = tk.Label(tempFrame, bg='#00979d', fg='white', font='lato 16 bold', justify='center', text='Temp: ')
 tmp.place(relx=0.001, relheight=1, relwidth=0.39)
 
-# This label contains temperature data
 temperature = tk.Label(tempFrame, font='lato 16', text='waiting for informations...')
 temperature.place(relx=0.35, relheight=1, relwidth=0.65)
 
 
-#Frame for humidity
+# Pole zawierające aktualną wilgotność
 humFrame = tk.Frame(dataFrame, bg='#00979d', bd=5)
 humFrame.place(relx=0.1, rely=0.55, relwidth=0.8, relheight=0.37)
 
-# humidity info
 hdt = tk.Label(humFrame, bg='#00979d', fg='white', font='lato 16 bold', justify='center', text='Humidity: ')
 hdt.place(relx=0.001, relheight=1, relwidth=0.39)
 
-# This label contains humidity data
 humidity = tk.Label(humFrame, font='lato 16', text='waiting for informations...')
 humidity.place(relx=0.35, relheight=1, relwidth=0.65)
 
@@ -186,20 +182,18 @@ dbFrame = tk.Frame(root, bg='#005c5f', bd=5)
 dbFrame.place(relx=0.5, rely=0.5, relwidth=0.75, relheight=0.3, anchor='n')
 
 
-# Frame for temperature
+# Pole dla temperatury
 dbTempFrame = tk.Frame(dbFrame, bg='#00979d', bd=5)
 dbTempFrame.place(relx=0.5, rely=0.1, relwidth=0.8, relheight=0.37, anchor='n')
 
-# This label contains temperature data
 dbTemperature = tk.Label(dbTempFrame, font='lato 16', text='waiting for informations...')
 dbTemperature.place(relheight=1, relwidth=1)
 
 
-# Frame for humidity
+# Pole dla wilgotności
 dbHumFrame = tk.Frame(dbFrame, bg='#00979d', bd=5)
 dbHumFrame.place(relx=0.5, rely=0.55, relwidth=0.8, relheight=0.37, anchor='n')
 
-# This label contains humidity data
 dbHum = tk.Label(dbHumFrame, font='lato 16', text='waiting for informations...')
 dbHum.place(relheight=1, relwidth=1)
 
